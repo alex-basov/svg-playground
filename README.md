@@ -1,2 +1,2 @@
 # svg-playground
-This is the play where I'm going to learn svg-code
+This is the place where I'm going to lear how to use SVG
