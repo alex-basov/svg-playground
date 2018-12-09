@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Creating my own SVG</title>
-  </head>
-  <body>
-    <svg width="250" height="250">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Creating my own SVG</title>
 
-      <circle r="120" cx="125" cy="125" fill="none" stroke="red" stroke-width="10"/>
-      <circle r="70" cx="125" cy="125" fill="none" stroke="red" stroke-width="10"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>SVG one</h2>
+<svg id="svg-one" width="250" height="250">
 
-      <rect rx="10" ry="10" x="25" y="25" height="200" width="200" fill="steelblue" />
+  <circle r="120" cx="125" cy="125" fill="none" stroke="red" stroke-width="10"/>
 
-      <line x1="50" y1="180" x2="200" y2="180" stroke="green" stroke-width="40"/>
+  <rect rx="10" ry="10" x="25" y="25" height="200" width="200" fill="steelblue"/>
 
-      <polygon fill="pink" points="50,50 125,125 200,50 200,200 125,125 50,200"/>
-    </svg>
-  </body>
+  <line x1="50" y1="180" x2="200" y2="180" stroke="green" stroke-width="40"/>
+
+  <polygon fill="pink" points="50,50 125,125 200,50 200,200 125,125 50,200"/>
+
+  <circle r="70" cx="125" cy="125" fill="none" stroke="red" stroke-width="10"/>
+</svg>
+
+<!-- another svg -->
+<h2>SVG two</h2>
+<svg id="svg-two" viewBox="0 0 300 300">
+  <!--width="300" height="300"
+  Width and height are viewport size (can be set in css).
+  But the canvas is infinite in both directions. -->
+
+  <!-- ViewBox controls what is shown inside of the viewport.
+  It can zoom in/out making viewbox larger/smaller than the viewport.
+  But viewport stays the same size. -->
+  <circle r="75" cx="150" cy="150"/>
+</svg>
+</body>
 </html>
