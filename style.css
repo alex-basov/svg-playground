@@ -1,12 +1,49 @@
 body {
     font-family: sans-serif;
+    background: #212121;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.content-container {
+    background: #f0f0f0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.card {
+    border: 1px solid #a1a1a1;
+    min-width: 260px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, .12);
+    background: white;
+    margin: 10px;
+}
+
+.card button {
+    padding: 5px 20px;
+    margin: 5px;
+    border: 1px solid wheat;
+    background: white;
+}
+
+button.set {
+    background: orange;
+    color: white;
 }
 
 .example {
-    border: 3px solid red;
     /* viewport size (the size of the viewable area)*/
-    width: 300px;
-    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.hamburger {
+    max-width: 70%;
 }
 
 .svg-sprite {
@@ -25,4 +62,16 @@ body {
 
 .github {
     fill: dodgerblue;
+}
+
+.w100 {
+    max-width: 100%;
+}
+
+.w50 {
+    max-width: 50%;
+}
+
+.removed {
+    display: none;
 }
