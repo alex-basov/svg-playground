@@ -101,9 +101,9 @@ button.set {
 .burger-menu {
     width: 60px;
     height: 60px;
-    background: yellow;
 }
 
+/*
 .burger-menu:hover .line1,
 .burger-menu:hover .line2,
 .burger-menu:hover .line3 {
@@ -129,4 +129,4 @@ button.set {
     100% {
       transform: scaleX(1);
     }
-}
+}*/
